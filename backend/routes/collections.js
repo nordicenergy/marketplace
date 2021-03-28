@@ -5,7 +5,7 @@ const path = require('path')
 const { get, pick } = require('lodash')
 
 const { authSellerAndShop, authRole } = require('./_auth')
-const { DSHOP_CACHE } = require('../utils/const')
+const { MARKETPLACE_CACHE } = require('../utils/const')
 const { decryptConfig } = require('../utils/encryptedConfig')
 const { findShopByHostname } = require('../utils/shop')
 
@@ -18,7 +18,7 @@ module.exports = function (router) {
       const collections = req.body.collections
 
       try {
-        const outDir = path.resolve(`${DSHOP_CACHE}/${req.shop.authToken}/data`)
+        const outDir = path.resolve(`${MARKETPLACE_CACHE}/${req.shop.authToken}/data`)
         const collectionsPath = `${outDir}/collections.json`
         writeFileSync(
           collectionsPath,
@@ -42,7 +42,7 @@ module.exports = function (router) {
       const { collectionId } = req.params
 
       try {
-        const outDir = path.resolve(`${DSHOP_CACHE}/${req.shop.authToken}/data`)
+        const outDir = path.resolve(`${MARKETPLACE_CACHE}/${req.shop.authToken}/data`)
         const collectionsPath = `${outDir}/collections.json`
         const collections = JSON.parse(fs.readFileSync(collectionsPath)).map(
           (collection) => {
