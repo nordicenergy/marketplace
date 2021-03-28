@@ -1,5 +1,5 @@
 /**
- * Convert a user's listings on Origin to Store format
+ * Convert a user's listings on Nordic Energy to Store format
  */
 
 const fs = require('fs')
@@ -8,30 +8,30 @@ const get = require('lodash/get')
 const uniq = require('lodash/uniq')
 const uniqBy = require('lodash/uniqBy')
 
-// const UserID = '0x334B9DE442bca03C07c1AC5bb86FcDfEdB108275' // Origin
+// const UserID = '0xb99F2f73da66898bc40006D0E419B294217fa3Aa' // Nordic Energy
 // const UserID = '0x5CA06BBeBe6e981abdD3C7147F173BfeC23265c7' // Tripps
-const UserID = '0x522731a061e896B5Db9dDff9234fB5461A533710' // Origin Store
+const UserID = '0x2202Ec7e2A1357887e67744dD6C49a66e75DA5e3' // Nordic Energy Store
 
-const Allowed = `origin-pullover-hoodie
+const Allowed = `nordic-energy-pullover-hoodie
 baseball-cap
-origin-backpack
-origin-sticker
+nordic-energy-backpack
+nordic-energy-sticker
 light-blue-origin-t-shirt
-origin-popsocket
+nordic-energy-popsocket
 astronaut-t-shirt
-origin-coffee-mug
-origin-t-shirt
-origin-tote-bag
-origin-crewneck-sweatshirt
+nordic-energy-coffee-mug
+nordic-energy-t-shirt
+nordic-energy-tote-bag
+nordic-energy-crewneck-sweatshirt
 leather-iphone-book-wallet
 dipping-sauce-holder-for-cars
 pokemon-planter
 concrete-usb-drive-128-gb
-origin-shirt
-origin-hodl-shirt
-origin-sweatshirt
+nordic-energy-shirt
+nordic-energy-hodl-shirt
+nordic-energy-sweatshirt
 iphone-phone-case
-origin-logo-beanie
+nordic-energy-logo-beanie
 rocket-coffee-mug
 robot-tote-bag
 cryptouni-pillow
@@ -41,20 +41,20 @@ samsung-galaxy-phone-case
 women-s-astro-shirt
 women-s-origin-soma-sweatshirt
 women-s-flower-crop-hoodie
-origin-vintage-cap
-origin-universe-t-shirt
-origin-unicorn-shirt
-origin-socks
-origin-rocketman-unisex-hoodie
-origin-logo-tee
+nordic-energy-vintage-cap
+nordic-energy-universe-t-shirt
+nordic-energy-unicorn-shirt
+nordic-energy-socks
+nordic-energy-rocketman-unisex-hoodie
+nordic-energy-logo-tee
 all-over-print-athletic-shorts
 galaxy-s10-s10-s10e-phone-case
-origin-reddit-shirt`.split('\n')
+nordic-energy-reddit-shirt`.split('\n')
 
 const outputDir = `${__dirname}/output-origin`
 
 async function getProductData() {
-  const res = await fetch('https://graphql.originprotocol.com/graphql', {
+  const res = await fetch('https://graphql.nordicenergy.io/graphql', {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: `{"operationName":null,"variables":{},"query":"{\\n  marketplace {\\n    user(id: \\"${UserID}\\") {\\n      listings(first: 1000) {\\n        nodes {\\n          ... on Listing {\\n            id\\n            title\\n            description\\n            media {\\n              urlExpanded\\n            }\\n            price {\\n              currency {\\n                ... on Currency {\\n                  id\\n                  __typename\\n                }\\n                __typename\\n              }\\n              amount\\n            }\\n            __typename\\n          }\\n          __typename\\n        }\\n      }\\n    }\\n  }\\n}\\n"}`
