@@ -1,4 +1,4 @@
-# Origin Protocol Dshop
+# Nordic Energy Marketplace
 
 An experimental decentralized e-commerce store served entirely from IPFS.
 
@@ -40,7 +40,7 @@ following:
   
   Example:
 
-      export DATABASE_URL="postgres://origin:origin@localhost/dshop"
+      export DATABASE_URL="postgres://nordicenergy:marketplace@localhost/dshop"
 
 ### Configure Redis
 
