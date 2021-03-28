@@ -1,4 +1,4 @@
-const DEFAULT_DESCRIPTOR = 'DSHOP'
+const DEFAULT_DESCRIPTOR = 'Marketplace'
 const DESCRIPTOR_INVALID_CHARS = /[^A-Z ]/gi
 const PUBLIC_KEY_PREFIXES = ['pk_test_', 'pk_live_']
 const SECRET_KEY_PREFIXES = ['sk_test_', 'sk_live_']
