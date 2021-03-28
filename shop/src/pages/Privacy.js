@@ -3,13 +3,13 @@ import React from 'react'
 const Privacy = () => {
   return (
     <div className="privacy-policy">
-      Last updated: October 30th, 2019
+      Last updated: March 27th, 2021
       <br />
       <br />
-      This privacy policy (&quot;<b>Policy</b>&quot;) describes how Origin
-      Protocol Labs and its related companies (&quot;<b>Company</b>&quot;)
+      This privacy policy (&quot;<b>Policy</b>&quot;) describes how Nordic Energy
+      Corporation Ltd. and its related companies (&quot;<b>Company</b>&quot;)
       collect, use and share personal information of consumer users of this
-      website, originprotocol.com (the &quot;<b>Site</b>&quot;). This Policy
+      website, marketplace.nordicenergy.io (the &quot;<b>Site</b>&quot;). This Policy
       also applies to any of our other websites that post this Policy. This
       Policy does not apply to websites that post different statements.
       <h4>WHAT WE COLLECT</h4>
@@ -106,7 +106,7 @@ const Privacy = () => {
           </li>
           <li>
             We may share information to protect the rights and property of
-            Origin Protocol Labs., our agents, customers, and others. This
+            Nordic Energy Corporation Ltd., our agents, customers, and others. This
             includes enforcing our agreements, policies, and terms of use.
           </li>
           <li>
@@ -141,15 +141,15 @@ const Privacy = () => {
       also contact us at our address:
       <br />
       <br />
-      Origin Protocol Labs
+      Nordic Energy Corporation Ltd.
       <br />
-      P.O. Box 61, Harbour Centre
+      P.O. Box 65230
       <br />
-      George Town, Grand Cayman, KY1-1102
+      Vaasa
       <br />
-      Cayman Islands
+      Finland. FI
       <br />
-      Email: support@originprotocol.com
+      Email: support@nordicenergy.io
       <br />
       <br />
       <h4>CHANGES TO THIS PRIVACY POLICY.</h4>
