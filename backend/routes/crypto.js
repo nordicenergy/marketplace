@@ -34,7 +34,7 @@ module.exports = function (router) {
    *   {string} fromAddress: Address sending the transaction.
    *   {string} toAddress: Address receiving the transaction.
    *   {string} amount: transaction amount
-   *   {string} currency: transaction currency (ex: ETH, OGN, etc...).
+   *   {string} currency: transaction currency (ex: ETH, NET, etc...).
    */
   router.post('/crypto/payment-code', authShop, async (req, res) => {
     const shop = req.shop
