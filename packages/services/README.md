@@ -1,4 +1,4 @@
-# Origin Services
+# Nordic Energy Services
 
 Provides Ganache and IPFS services for use when developing locally or for running tests.
 
