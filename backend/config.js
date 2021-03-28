@@ -14,15 +14,15 @@ const Defaults = {
     marketplaceContract: process.env.MARKETPLACE_CONTRACT
   },
   4: {
-    ipfsGateway: 'https://fs-autossl.staging.ogn.app',
-    ipfsApi: 'https://fs.staging.ogn.app',
-    marketplaceContract: '0x3d608cce08819351ada81fc1550841ebc10686fd',
+    ipfsGateway: 'https://fs-autossl.staging.nordicenergy.io',
+    ipfsApi: 'https://fs.staging.nordicenergy.io',
+    marketplaceContract: '0x0c92804F7C7DE65d62E52D43D79747d97FAda607',
     fetchPastLogs: true
   },
   1: {
-    ipfsGateway: 'https://fs-autossl.ogn.app',
-    ipfsApi: 'https://fs.ogn.app',
-    marketplaceContract: '0x698ff47b84837d3971118a369c570172ee7e54c2',
+    ipfsGateway: 'https://fs-autossl.nordicenergy.io',
+    ipfsApi: 'https://fs.nordicenergy.io',
+    marketplaceContract: '0xb99F2f73da66898bc40006D0E419B294217fa3Aa',
     fetchPastLogs: true
   }
 }
