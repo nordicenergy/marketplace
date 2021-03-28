@@ -1,5 +1,5 @@
-const OriginToken = artifacts.require('./token/OriginToken.sol')
-const MockOUSD = artifacts.require('./token/MockOUSD.sol')
+const NordicEnergyToken = artifacts.require('./token/NordicEnergyToken.sol')
+const MockNUSD = artifacts.require('./token/MockNUSD.sol')
 const assert = require('assert')
 
 // NOTE: this file will only have an effect for local blockchains
@@ -7,7 +7,7 @@ const assert = require('assert')
 module.exports = function(deployer, network) {
   return deployer.then(() => {
     if (network === 'development') {
-      console.log('Transferring OGN to test accounts')
+      console.log('Transferring NET to test accounts')
       return transferTokensToTestAccounts(deployer, network)
     } else {
       console.log('Skipping')
@@ -30,10 +30,10 @@ async function transferTokensToTestAccounts(deployer, network) {
   })
 
   const lastAccount = accounts[accounts.length - 1]
-  const ognToken = await OriginToken.deployed()
-  const ousdToken = await MockOUSD.deployed()
+  const netToken = await NordicEnergyToken.deployed()
+  const nusdToken = await MockNUSD.deployed()
 
-  for (const token of [ognToken, ousdToken]) {
+  for (const token of [netToken, nusdToken]) {
     const decimals = await token.decimals()
     const contractOwner = await token.owner()
     const symbol = await token.symbol()
