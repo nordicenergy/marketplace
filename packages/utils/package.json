@@ -1,5 +1,5 @@
 {
-  "author": "Origin Protocol",
+  "author": "Nordic Energy",
   "name": "@origin/utils",
   "version": "0.1.0",
   "license": "MIT",
@@ -7,7 +7,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OriginProtocol/dshop"
+    "url": "https://github.com/nordicenergy/marketplace"
   },
   "scripts": {
     "lint": "eslint . && npm run prettier:check",
