@@ -1,7 +1,7 @@
 {
   "name": "@origin/shop-backend",
   "version": "0.0.1",
-  "description": "Origin Dshop Backend",
+  "description": "Nordic Energy Marketplace Backend",
   "engines": {
     "node": ">=14.x"
   },
@@ -18,7 +18,7 @@
     "prettier:check": "prettier -c *.js \"**/*.js\"",
     "test": "LOG_LEVEL=NONE NODE_ENV=test mocha --timeout 10000 --exit --file test/setup"
   },
-  "author": "Nick Poulden <nick@originprotocol.com>",
+  "author": "Nordic Energy <info@nordicenergy.io>",
   "license": "MIT",
   "dependencies": {
     "@google-cloud/bigquery": "^5.5.0",
