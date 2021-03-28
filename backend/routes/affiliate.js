@@ -31,7 +31,7 @@ function authAffiliate(req, res, next) {
 }
 
 /**
- * Formats a BigQuery product row into a dshop product obj
+ * Formats a BigQuery product row into a Marketplace product obj
  */
 function bqProductFormatter(product) {
   const listingIdFromProductId = (id) => {
