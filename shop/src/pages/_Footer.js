@@ -16,7 +16,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="powered-by"
-          href="https://www.originprotocol.com/en/dshop"
+          href="https://www.marketplace.nordicenergy.io/en/"
         >
           <fbt desc="footer.poweredBy">
             Powered by <span>Origin Dshop</span>
@@ -24,7 +24,7 @@ const Footer = () => {
         </a>
         <div className="copyright">
           <fbt desc="footer.copyrightText">
-            &copy; Origin Protocol{' '}
+            &copy; Nordic Energy{' '}
             <FbtParam name="year">{date.getFullYear()}</FbtParam>.
           </fbt>
         </div>
@@ -45,9 +45,9 @@ const Footer = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://medium.com/originprotocol/built-on-origin-a-decentralized-shopify-alternative-888adc4198b0"
+              href="https://medium.com/nordicenergy/built-on-nordic-energy-a-decentralized-shopify-alternative"
             >
-              <fbt desc="footer.aboutLink">About Dshop</fbt>
+              <fbt desc="footer.aboutLink">About Decentralized Marketplace</fbt>
             </a>
           </div>
         </div>
