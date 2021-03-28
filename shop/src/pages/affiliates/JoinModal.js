@@ -95,12 +95,12 @@ const Join = ({
     </div>
 
     <div className="description">
-      You will be asked to sign a message in order to enable Origin Affiliates.
+      You will be asked to sign a message in order to enable Nordic Energy Marketplace Affiliates.
     </div>
     <button
       onClick={() => {
         const date = dayjs().toISOString()
-        const msg = `OGN Affiliate Login ${date}`
+        const msg = `NET Affiliate Login ${date}`
         window.ethereum.send(
           {
             jsonrpc: '2.0',
