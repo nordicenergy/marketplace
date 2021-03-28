@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/OriginProtocol/dshop"
+    "url": "https://github.com/nordicenergy/marketplace"
   },
   "bugs": {
-    "url": "https://github.com/OriginProtocol/dshop/issues"
+    "url": "https://github.com/nordicenergy/marketplace/issues"
   },
   "license": "MIT",
   "dependencies": {
