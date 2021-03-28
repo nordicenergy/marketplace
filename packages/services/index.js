@@ -73,7 +73,7 @@ const startIpfs = async () => {
       },
       API: {
         HTTPHeaders: {
-          'Access-Control-Allow-Origin': ['*']
+          'Access-Control-Allow-NordicEnergy': ['*']
         }
       }
     }
@@ -98,8 +98,8 @@ function _updateContractsJsonConfig() {
   // in the JSON file packages/contracts/build/contracts.json
   const contracts = {
     V01_Marketplace: 'Marketplace_V01',
-    OriginToken: 'OGN',
-    MockOUSD: 'OUSD'
+    NordicEnergyToken: 'NET',
+    MockNUSD: 'NUSD'
   }
 
   // 1. Look for contracts ABIs in truffle's build directory
