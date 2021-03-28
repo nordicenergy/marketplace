@@ -9,7 +9,7 @@ const currencies = [
   // Tokens:
   'ETH',
   'DAI',
-  'OGN',
+  'NET',
   // Fiat:
   'KRW',
   'SGD',
