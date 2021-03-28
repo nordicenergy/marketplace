@@ -1,16 +1,16 @@
-# Origin IPFS
+# Nordic Energy IPFS
 
 Convenience methods for getting and setting data in IPFS
 
 ## Usage
 
 ```
-import { get, post } from '@origin/ipfs'
+import { get, post } from '@nordic-energy/ipfs'
 
-const ipfsHash = await post("https://ipfs.originprotocol.com", { my: "data" })
+const ipfsHash = await post("https://ipfs.nordicenergy.io", { my: "data" })
 console.log(ipfsHash)
 
-const retrieved = await get("https://ipfs.originprotocol.com", ipfsHash)
+const retrieved = await get("https://ipfs.nordicenergy.io", ipfsHash)
 console.log(retrieved)
 
 ```
