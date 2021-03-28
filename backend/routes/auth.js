@@ -4,7 +4,7 @@ const get = require('lodash/get')
 const omit = require('lodash/omit')
 const pick = require('lodash/pick')
 
-const { Seller, Shop, Network } = require('../models')
+const { Seller, Marketplace, Network } = require('../models')
 const {
   checkPassword,
   authShop,
@@ -33,7 +33,7 @@ const AUTH_FAILURE_RESPOSNE = {
  */
 async function getGcpSuperAdminPassword() {
   const url =
-    'http://metadata/computeMetadata/v1/instance/attributes/DSHOP_SUPERADMIN_PASSWORD'
+    'http://metadata/computeMetadata/v1/instance/attributes/MARKETPLACE_SUPERADMIN_PASSWORD'
   const res = await fetch(url, {
     headers: { 'Metadata-Flavor': 'Google' },
     method: 'GET'
@@ -139,7 +139,7 @@ module.exports = function (router) {
     })
     const network = networks.find((n) => n.active)
 
-    const shopDataDir = DSHOP_CACHE
+    const shopDataDir = MARKETPLACE_CACHE
 
     const include = { model: Seller, where: { id: user.id } }
 
