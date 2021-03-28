@@ -1,5 +1,5 @@
 {
-  "author": "Nick Poulden <nick@originprotocol.com>",
+  "author": "Nordic Energy <info@nordicenergy.io>",
   "name": "@origin/services",
   "version": "0.1.0",
   "license": "MIT",
@@ -7,7 +7,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OriginProtocol/dshop"
+    "url": "https://github.com/nordicenergy/marketplace"
   },
   "scripts": {
     "start": "node start.js",
