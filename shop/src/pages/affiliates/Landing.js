@@ -13,7 +13,7 @@ const AffiliatesLanding = ({ state, setState, account, dispatch }) => {
       )}
       <div className="affiliates-header" />
       <h2>
-        Invite anyone to check out the {config.title} shop and you will earn OGN
+        Invite anyone to check out the {config.title} marketplace and you will earn NET
         for every order!
       </h2>
       <div className="description">
