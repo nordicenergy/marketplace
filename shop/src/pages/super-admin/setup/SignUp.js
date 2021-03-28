@@ -49,7 +49,7 @@ const SignUp = ({ url = '/auth/registration' }) => {
 
   return (
     <div className="signup-form">
-      <div className="actions">Get started by creating a Dshop account.</div>
+      <div className="actions">Get started by creating a Marketplace account.</div>
       <form
         className="sign-up"
         onSubmit={(e) => {
