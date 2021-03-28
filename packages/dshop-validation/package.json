@@ -3,11 +3,11 @@
   "name": "@origin/dshop-validation",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "Common validation utilities for Dshop",
+  "description": "Common validation utilities for Marketplace",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OriginProtocol/dshop"
+    "url": "https://github.com/nordicenergy/marketplace"
   },
   "scripts": {
     "lint": "eslint . && npm run prettier:check",
